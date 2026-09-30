@@ -1,0 +1,24 @@
+# Logos shown in the hero strip and named in the footer.
+# role: "organizer" or "supporter" (supporters are listed after a divider).
+# height: optional logo height in px (default 48) for marks with a lot of built-in padding.
+- name: AI Grid
+  logo: aigrid.png
+  url: https://ai-grid.org
+  role: organizer
+- name: CAIRNE
+  logo: cairne.png
+  url: https://cairne.eu
+  role: organizer
+- name: JUPITER AI Factory
+  logo: jaif.png
+  height: 60
+  url: https://jaif.ai
+  role: organizer
+- name: RWTH Aachen University
+  logo: rwth.svg
+  url: https://www.rwth-aachen.de
+  role: organizer
+- name: KI.NRW
+  logo: kinrw.svg
+  url: https://www.ki.nrw
+  role: supporter

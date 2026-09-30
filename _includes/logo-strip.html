@@ -1,0 +1,26 @@
+{%- comment -%}
+  Organizer logos followed by supporters, separated by a thin rule
+  (same layout as the Google Form header).
+{%- endcomment -%}
+<div class="logo-strip">
+  <div class="logo-group">
+    <span class="logo-label">Organized by</span>
+    <div class="logo-row">
+      {%- assign orgs = site.data.organizers | where: "role", "organizer" -%}
+      {%- for org in orgs %}
+      <a href="{{ org.url }}" title="{{ org.name }}"><img src="{{ "/assets/images/logos/" | append: org.logo | relative_url }}" alt="{{ org.name }}"{% if org.height %} style="height: {{ org.height }}px"{% endif %}></a>
+      {%- endfor %}
+    </div>
+  </div>
+  {%- assign supporters = site.data.organizers | where: "role", "supporter" -%}
+  {%- if supporters.size > 0 %}
+  <div class="logo-group logo-group--support">
+    <span class="logo-label">Supported by</span>
+    <div class="logo-row">
+      {%- for org in supporters %}
+      <a href="{{ org.url }}" title="{{ org.name }}"><img src="{{ "/assets/images/logos/" | append: org.logo | relative_url }}" alt="{{ org.name }}"{% if org.height %} style="height: {{ org.height }}px"{% endif %}></a>
+      {%- endfor %}
+    </div>
+  </div>
+  {%- endif %}
+</div>

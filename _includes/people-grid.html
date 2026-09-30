@@ -1,0 +1,17 @@
+{%- comment -%}
+  Photo grid used for keynote speakers and the committee.
+  Params: people (list), dir (folder under assets/images), empty (text when the list is empty).
+{%- endcomment -%}
+{%- if include.people.size > 0 -%}
+<div class="people-grid">
+  {%- for p in include.people %}
+  <div class="person">
+    <img src="{{ "/assets/images/" | append: include.dir | append: "/" | append: p.photo | relative_url }}" alt="{{ p.name }}">
+    <div class="person-name">{% if p.url %}<a href="{{ p.url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</div>
+    <div class="person-meta">{{ p.affiliation | default: p.role }}</div>
+  </div>
+  {%- endfor %}
+</div>
+{%- else -%}
+<p class="tba">{{ include.empty }}</p>
+{%- endif -%}

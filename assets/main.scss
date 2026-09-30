@@ -1,0 +1,238 @@
+---
+# Front matter tells Jekyll to process this file.
+---
+
+// Minima variables must be set before the import.
+$base-font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+$brand-color: #00549f;          // RWTH blue, also close to the JAIF navy
+$content-width: 900px;
+
+// Header bar colour (EWRL uses #74006b; we use a dark navy).
+$header-bg: #0f2d52;
+$accent: #7bb13c;               // CAIRNE green, used for the apply box edge
+
+@import "minima";
+
+// ---------- Header (EWRL layout: title left, links right, hamburger on mobile)
+
+.site-header {
+  background-color: $header-bg;
+  border-top: 5px solid darken($header-bg, 8%);
+  border-bottom: none;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.site-title,
+.site-title:visited {
+  flex: 1;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1.25rem;
+  float: none;
+  position: static;
+  border: none;
+  background: none;
+  line-height: $base-line-height * $base-font-size * 2.25;
+
+  a,
+  a:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+  a:hover { text-decoration: underline; }
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.75rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-toggle { display: block; }
+
+  .site-nav {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    padding-bottom: 0.75rem;
+    line-height: 2.2;
+
+    &.open { display: flex; }
+  }
+}
+
+// ---------- Hero
+
+.hero {
+  h1 {
+    font-size: 2.1rem;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.key-facts {
+  margin-bottom: 1.5rem;
+}
+
+// Organizer logos, laid out like the form header.
+.logo-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 1.5rem 1.5rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #fff;
+  border: 1px solid $grey-color-light;
+  border-radius: 12px;
+}
+
+.logo-group--support {
+  padding-left: 1.5rem;
+  border-left: 1px solid $grey-color-light;
+}
+
+.logo-label {
+  display: block;
+  font-size: 0.8rem;
+  color: $grey-color;
+  margin-bottom: 0.4rem;
+}
+
+.logo-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.4rem;
+
+  img {
+    height: 48px;
+    width: auto;
+    max-width: 170px;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo-group--support {
+    padding-left: 0;
+    border-left: none;
+  }
+  .logo-row img { height: 38px; }
+}
+
+// Announcement box (EWRL "Registration is now open" panel).
+.news-box {
+  margin: 2rem auto;
+  max-width: 800px;
+  padding: 1.75rem 2rem;
+  text-align: center;
+  color: #0f2d52;
+  background: linear-gradient(to right, #e6f2ff, #f0f8ff);
+  border-left: 6px solid $accent;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  .news-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.btn-apply,
+.btn-apply:visited {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.6rem 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  background: $brand-color;
+  border-radius: 999px;
+  text-decoration: none;
+
+  &:hover {
+    background: darken($brand-color, 8%);
+    text-decoration: none;
+  }
+}
+
+// ---------- Sections
+
+.home h2 {
+  margin-top: 2.5rem;
+  font-weight: 700;
+}
+
+.format-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  margin: 1rem 0;
+
+  li {
+    padding: 1rem 1.1rem;
+    background: #f5f8fb;
+    border-radius: 8px;
+  }
+  strong { display: block; margin-bottom: 0.25rem; }
+}
+
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 0.5rem;
+  text-align: center;
+
+  .person { padding: 8px; }
+
+  img {
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 8px;
+  }
+  .person-name { font-weight: 700; }
+  .person-meta { font-size: 0.8rem; color: $grey-color; }
+}
+
+.tba {
+  color: $grey-color;
+  font-style: italic;
+}
+
+.map-embed {
+  width: 100%;
+  height: 360px;
+  border: 0;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.checklist li { margin-bottom: 0.35rem; }
+
+// Minima splits the footer 35/20/45; the organizer list needs the wider column.
+.footer-col-2 { width: -webkit-calc(65% - (#{$spacing-unit} / 2)); width: calc(65% - (#{$spacing-unit} / 2)); }
+@media screen and (max-width: 800px) {
+  .footer-col-2 { width: calc(100% - (#{$spacing-unit} / 2)); }
+}

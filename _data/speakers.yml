@@ -1,0 +1,8 @@
+# Keynote speakers. While this list is empty the page shows "To be announced".
+# Put photos in assets/images/speakers/ (portrait crop, roughly 4:5).
+#
+# - name: Jane Doe
+#   affiliation: Example University
+#   photo: jane_doe.jpg
+#   url: https://example.org
+[]

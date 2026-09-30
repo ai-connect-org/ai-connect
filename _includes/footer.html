@@ -1,0 +1,24 @@
+<footer class="site-footer h-card">
+  <div class="wrapper">
+    <h2 class="footer-heading">{{ site.event.name | escape }}</h2>
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>{{ site.event.dates }}</li>
+          <li>{{ site.event.venue }}, {{ site.event.city }}</li>
+          {%- if site.event.contact_email != "" %}
+          <li><a class="u-email" href="mailto:{{ site.event.contact_email }}">{{ site.event.contact_email }}</a></li>
+          {%- endif %}
+        </ul>
+      </div>
+      <div class="footer-col footer-col-2">
+        <p>Organized by
+          {% assign orgs = site.data.organizers | where: "role", "organizer" -%}
+          {%- for org in orgs -%}
+            <a href="{{ org.url }}">{{ org.name }}</a>{% unless forloop.last %}, {% endunless %}
+          {%- endfor %}.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>

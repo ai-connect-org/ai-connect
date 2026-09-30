@@ -1,0 +1,44 @@
+# Site settings. Restart `jekyll serve` after editing this file.
+title: "AI Connect 2026"
+description: >-
+  AI Connect: Research Meets Industry. A two-day event bringing together
+  researchers, students and companies, 26-27 November 2026 at Burg Frankenberg, Aachen.
+
+# Served from https://<org>.github.io/ai-connect/ once the repo lives under the org.
+# If the site moves to a custom domain or an <org>.github.io repo, set baseurl to "".
+baseurl: "/ai-connect"
+url: ""
+
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Event facts, referenced from index.md and the header so they live in one place.
+event:
+  name: "AI Connect: Research Meets Industry"
+  dates: "26–27 November 2026"
+  venue: "Burg Frankenberg"
+  city: "Aachen, Germany"
+  address: "Bismarckstraße 68, 52066 Aachen"
+  apply_url: "https://docs.google.com/forms/d/e/1FAIpQLSdrrw6fTckDII8UWTZjQd5OsA0553XbmASQTz_fUreYGo0LyA/viewform"
+  application_deadline: "TBA"
+  contact_email: ""
+
+# Top navigation. Paths are relative to baseurl.
+nav:
+  - title: About
+    url: /#about
+  - title: Program
+    url: /program/
+  - title: Venue
+    url: /#venue
+  - title: Apply
+    url: /#apply
+
+exclude:
+  - README.md
+  - CLAUDE.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

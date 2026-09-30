@@ -1,0 +1,25 @@
+<header class="site-header" role="banner">
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+    <nav class="site-nav">
+      {%- for item in site.nav -%}
+        <a href="{{ item.url | relative_url }}">{{ item.title | escape }}</a>
+      {%- endfor -%}
+    </nav>
+  </div>
+</header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var toggle = document.querySelector(".menu-toggle");
+    var nav = document.querySelector(".site-nav");
+    toggle.addEventListener("click", function () {
+      var open = nav.classList.toggle("open");
+      toggle.textContent = open ? "✖" : "☰";
+      toggle.setAttribute("aria-expanded", open);
+    });
+  });
+</script>
