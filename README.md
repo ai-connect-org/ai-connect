@@ -13,6 +13,8 @@ Built with Jekyll and the Minima theme; the layout follows the
 | Program | `program.md` |
 | Keynote speakers | `_data/speakers.yml`, photos in `assets/images/speakers/` |
 | Organizing committee | `_data/committee.yml`, photos in `assets/images/people/` |
+| Participating companies and their challenges | `_data/companies.yml`, logos in `assets/images/companies/` |
+| Photos from past events | `_data/gallery.yml`, files in `assets/images/gallery/` |
 | Organizer and supporter logos | `_data/organizers.yml`, files in `assets/images/logos/` |
 | Colours and layout | `assets/main.scss` |
 

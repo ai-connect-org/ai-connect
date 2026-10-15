@@ -1,0 +1,17 @@
+{%- comment -%}
+  Company cards: logo, sector and the challenge the company brings.
+  Params: logos (list with name, logo, url, sector, challenge), empty (text when the list is empty).
+{%- endcomment -%}
+{%- if include.logos.size > 0 -%}
+<div class="company-grid">
+  {%- for c in include.logos %}
+  <div class="company">
+    <a class="company-logo" href="{{ c.url }}" title="{{ c.name }}"><img src="{{ "/assets/images/" | append: c.logo | relative_url }}" alt="{{ c.name }}"></a>
+    {%- if c.sector %}<div class="company-sector">{{ c.sector }}</div>{% endif %}
+    {%- if c.challenge %}<p class="company-challenge">{{ c.challenge }}</p>{% endif %}
+  </div>
+  {%- endfor %}
+</div>
+{%- else -%}
+<p class="tba">{{ include.empty }}</p>
+{%- endif -%}

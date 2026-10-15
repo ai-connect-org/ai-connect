@@ -1,0 +1,18 @@
+# Photos from past events, shown as a strip under "About". Hidden while empty.
+# Put files in assets/images/gallery/ (landscape 3:2, 1200x800, compressed JPG).
+# Three fill one row on desktop.
+#
+# The stock-* files are Unsplash placeholders (Unsplash License) until we get
+# photos from our own events; replace them and delete the files.
+
+- file: stock-workshop.jpg
+  alt: A small team brainstorming at a whiteboard
+  source: https://unsplash.com/photos/CdTQI-Nh7J4
+
+- file: stock-presentation.jpg
+  alt: A speaker presenting on stage to a full room
+  source: https://unsplash.com/photos/bzdhc5b3Bxs
+
+- file: stock-networking.jpg
+  alt: People talking in small groups at an event
+  source: https://unsplash.com/photos/yTsy3PYFPtc

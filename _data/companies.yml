@@ -1,0 +1,32 @@
+# Participating companies, one per challenge (same order as the application form).
+# logo is a path under assets/images/; company logos live in assets/images/companies/.
+# While this list is empty the section shows "To be announced".
+
+- name: Carglass
+  sector: Automotive
+  logo: companies/carglass.svg
+  url: https://www.carglass.de
+  challenge: >-
+    Machine learning for complaint management, e.g. classifying and prioritizing
+    incoming customer inquiries.
+
+- name: Cognita Reply
+  sector: Consulting
+  logo: companies/cognita-reply.svg
+  url: https://www.reply.com/cognita-reply/en
+  challenge: >-
+    An AI agent that captures ideas consistently, screens their AI suitability and
+    EU AI Act risk, and prioritizes high-value opportunities transparently.
+
+- name: JUPITER AI Factory
+  sector: Healthcare
+  logo: logos/jaif.png
+  url: https://jaif.ai
+  challenge: To be announced.
+
+- name: Unchained Robotics
+  sector: Robotics
+  logo: companies/unchained-robotics.svg
+  url: https://www.unchainedrobotics.de/en
+  challenge: >-
+    AI-driven mixed palletizing: intelligent planning for flexible robotic automation.

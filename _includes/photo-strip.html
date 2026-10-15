@@ -1,0 +1,11 @@
+{%- comment -%}
+  Row of photos from past events. Renders nothing while the list is empty.
+  Params: photos (list with file, alt).
+{%- endcomment -%}
+{%- if include.photos.size > 0 -%}
+<div class="photo-strip">
+  {%- for p in include.photos %}
+  <img src="{{ "/assets/images/gallery/" | append: p.file | relative_url }}" alt="{{ p.alt }}" loading="lazy">
+  {%- endfor %}
+</div>
+{%- endif -%}

@@ -31,10 +31,10 @@ nav:
     url: /#about
   - title: Program
     url: /program/
-  - title: Venue
-    url: /#venue
   - title: Apply
     url: /#apply
+  - title: Venue
+    url: /#venue
 
 exclude:
   - README.md
