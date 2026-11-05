@@ -18,11 +18,15 @@
     An AI agent that captures ideas consistently, screens their AI suitability and
     EU AI Act risk, and prioritizes high-value opportunities transparently.
 
-- name: JUPITER AI Factory
+- name: JAIF x WZL | RWTH
   sector: Manufacturing
   logo: logos/jaif.png
-  url: https://jaif.ai
-  challenge: To be announced.
+  url: https://www.wzl.rwth-aachen.de/cms/~sijq/wzl/?lidx=1
+  challenge: >-
+    Develop a concept for continuously adapting and deploying vision foundation models
+    for battery cell quality inspection, exploring how JUPITER can support model training
+    and validation while maintaining inspection reliability through validated updates and
+    targeted human oversight.
 
 - name: Unchained Robotics
   sector: Robotics
