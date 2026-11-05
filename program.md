@@ -4,21 +4,10 @@ title: Program
 permalink: /program/
 ---
 
-The detailed program for {{ site.event.dates }} will be published here.
+**Start:** Thursday, 26 November 2026, 2:00 PM <br>
+**End:** to be announced
 
-The two days will combine keynote talks, company pitches, collaborative working sessions,
-project presentations and networking. Selected participants will also receive the program
-by email.
+The two days include the following sessions. Selected participants will also receive the
+detailed program by email.
 
-<!--
-Suggested structure once the schedule is fixed:
-
-### Thursday, 26 November
-| Time  | Session |
-|-------|---------|
-| 09:00 | Registration and coffee |
-
-### Friday, 27 November
-| Time  | Session |
-|-------|---------|
--->
+{% include format-list.html %}

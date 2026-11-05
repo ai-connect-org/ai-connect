@@ -6,7 +6,11 @@
 <div class="people-grid">
   {%- for p in include.people %}
   <div class="person">
+    {%- if p.logo %}
+    <img class="person-logo" src="{{ "/assets/images/" | append: p.logo | relative_url }}" alt="{{ p.name }} logo">
+    {%- else %}
     <img src="{{ "/assets/images/" | append: include.dir | append: "/" | append: p.photo | relative_url }}" alt="{{ p.name }}">
+    {%- endif %}
     <div class="person-name">{% if p.url %}<a href="{{ p.url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</div>
     <div class="person-meta">{{ p.affiliation | default: p.role }}</div>
   </div>

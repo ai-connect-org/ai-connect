@@ -1,8 +1,13 @@
 # Keynote speakers. While this list is empty the page shows "To be announced".
 # Put photos in assets/images/speakers/ (portrait crop, roughly 4:5).
+# Until a speaker is named, an entry can use logo (path under assets/images/) instead of photo.
 #
 # - name: Jane Doe
 #   affiliation: Example University
 #   photo: jane_doe.jpg
 #   url: https://example.org
-[]
+
+- name: Ember
+  affiliation: Global energy think tank
+  logo: companies/ember.svg
+  url: https://ember-energy.org/

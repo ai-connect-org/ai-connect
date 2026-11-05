@@ -263,6 +263,13 @@ $accent: #7bb13c;               // CAIRNE green, used for the apply box edge
     object-position: top;
     border-radius: 8px;
   }
+  // Logos must not be cropped like portraits.
+  img.person-logo {
+    width: 150px;
+    height: 80px;
+    object-fit: contain;
+    object-position: center;
+  }
   .person-name { font-weight: 700; }
   .person-meta { font-size: 0.8rem; color: $grey-color; }
 }
@@ -270,6 +277,21 @@ $accent: #7bb13c;               // CAIRNE green, used for the apply box edge
 .tba {
   color: $grey-color;
   font-style: italic;
+}
+
+.venue-photo {
+  margin: 1rem 0;
+
+  img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+  }
+  figcaption {
+    margin-top: 0.35rem;
+    font-size: 0.8rem;
+    color: $grey-color;
+  }
 }
 
 .map-embed {
