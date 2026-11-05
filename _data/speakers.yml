@@ -1,6 +1,7 @@
-# Keynote speakers. While this list is empty the page shows "To be announced".
-# Put photos in assets/images/speakers/ (portrait crop, roughly 4:5).
-# Until a photo arrives, an entry can use logo (path under assets/images/) and logo_alt instead.
+# Speakers. While this list is empty the page shows "To be announced".
+# Put photos in assets/images/speakers/ (portrait crop, roughly 4:5), then add
+# "photo: jane_doe.jpg" to the entry. Without a photo the card shows initials,
+# or a logo if the entry has logo (path under assets/images/) and logo_alt.
 #
 # - name: Jane Doe
 #   affiliation: Example University
@@ -12,3 +13,23 @@
   logo: companies/amber.svg
   logo_alt: amber logo
   url: https://amber.de/en/
+
+- name: Tamara Weber
+  affiliation: AI Center, RWTH Aachen University
+  url: https://www.linkedin.com/in/tamara-weber-820b6583/
+
+- name: Marie Anastacio
+  affiliation: CAIRNE
+  url: https://www.linkedin.com/in/marie-anastacio-29b4562b/
+
+- name: Sven Trendow
+  affiliation: AI Grid
+  url: https://www.linkedin.com/in/sven-trendow-2987891a8/
+
+- name: Laure Poirson
+  affiliation: AI Grid
+  url: https://www.linkedin.com/in/laure-poirson/
+
+- name: Julia Mann
+  affiliation: JUPITER AI Factory
+  url: https://www.linkedin.com/in/julia-hoerner/

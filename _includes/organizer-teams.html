@@ -1,0 +1,17 @@
+{%- comment -%}
+  Organizer cards: logo, organization name and its people.
+  Params: teams (list with name, logo, url, people).
+{%- endcomment -%}
+<div class="team-grid">
+  {%- for t in include.teams %}
+  <div class="team">
+    <a class="team-logo" href="{{ t.url }}" title="{{ t.name }}"><img src="{{ "/assets/images/logos/" | append: t.logo | relative_url }}" alt="{{ t.name }} logo"></a>
+    <div class="team-name">{{ t.name }}</div>
+    <ul class="team-people">
+      {%- for p in t.people %}
+      <li><a href="{{ p.url }}">{{ p.name }}</a></li>
+      {%- endfor %}
+    </ul>
+  </div>
+  {%- endfor %}
+</div>

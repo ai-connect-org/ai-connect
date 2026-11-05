@@ -78,7 +78,7 @@ in the application form; final team assignment depends on balance across the gro
 
 {% include logo-grid.html logos=site.data.companies empty="To be announced." %}
 
-## Keynote speakers
+## Speakers
 
 {% include people-grid.html people=site.data.speakers dir="speakers" empty="To be announced." %}
 
@@ -116,10 +116,8 @@ separately.
   src="https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1sBurg+Frankenberg,+Bismarckstra%C3%9Fe+68,+52066+Aachen!6i15"
   title="Map of Burg Frankenberg, Aachen"></iframe>
 
-{% if site.data.committee.size > 0 %}
-## Organizing committee
+## Organizers
 
-{% include people-grid.html people=site.data.committee dir="people" %}
-{% endif %}
+{% include organizer-teams.html teams=site.data.organizer_teams %}
 
 </div>

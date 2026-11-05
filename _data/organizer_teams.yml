@@ -1,0 +1,34 @@
+# "Organizers" section: one card per organization, listing its people.
+# logo is a file in assets/images/logos/. The hero logos and the footer use organizers.yml.
+
+- name: CAIRNE
+  logo: cairne.png
+  url: https://cairne.eu
+  people:
+    - name: Aditya Mohan
+      url: https://www.linkedin.com/in/amsks/
+    - name: Marie Anastacio
+      url: https://www.linkedin.com/in/marie-anastacio-29b4562b/
+
+- name: AI Grid
+  logo: aigrid.png
+  url: https://ai-grid.org
+  people:
+    - name: Laure Poirson
+      url: https://www.linkedin.com/in/laure-poirson/
+    - name: Sven Trendow
+      url: https://www.linkedin.com/in/sven-trendow-2987891a8/
+
+- name: JUPITER AI Factory
+  logo: jaif.png
+  url: https://jaif.ai
+  people:
+    - name: Julia Mann
+      url: https://www.linkedin.com/in/julia-hoerner/
+
+- name: AI Center, RWTH Aachen University
+  logo: rwth.svg
+  url: https://ai.rwth-aachen.de
+  people:
+    - name: Tamara Weber
+      url: https://www.linkedin.com/in/tamara-weber-820b6583/

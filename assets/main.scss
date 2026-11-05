@@ -265,8 +265,10 @@ $accent: #7bb13c;               // CAIRNE green, used for the apply box edge
   }
   // Logos must not be cropped like portraits.
   img.person-logo {
+    display: block;
     width: 150px;
-    height: 80px;
+    height: 96px;
+    margin: 0 auto 0.5rem;
     object-fit: contain;
     object-position: center;
   }
@@ -286,6 +288,43 @@ $accent: #7bb13c;               // CAIRNE green, used for the apply box edge
   }
   .person-name { font-weight: 700; }
   .person-meta { font-size: 0.8rem; color: $grey-color; }
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+
+  .team {
+    padding: 1rem 1.1rem;
+    text-align: center;
+    background: #fff;
+    border: 1px solid $grey-color-light;
+    border-radius: 8px;
+  }
+  .team-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    margin-bottom: 0.75rem;
+  }
+  img {
+    max-height: 48px;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  .team-name {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+  .team-people {
+    margin: 0;
+    list-style: none;
+    font-size: 0.9rem;
+  }
 }
 
 .tba {

@@ -11,12 +11,12 @@ Built with Jekyll and the Minima theme; the layout follows the
 | Dates, venue, application link, deadline, contact | `event:` block in `_config.yml` |
 | Home page text | `index.md` |
 | Program | `program.md` |
-| Keynote speakers | `_data/speakers.yml`, photos in `assets/images/speakers/` |
+| Speakers | `_data/speakers.yml`, photos in `assets/images/speakers/` |
 | Venue photo | `index.md` (Venue section), file in `assets/images/venue/`; CC BY 3.0, keep the credit |
-| Organizing committee | `_data/committee.yml`, photos in `assets/images/people/` |
+| Organizers and their people | `_data/organizer_teams.yml` |
 | Participating companies and their challenges | `_data/companies.yml`, logos in `assets/images/companies/` |
 | Photos from past events | `_data/gallery.yml`, files in `assets/images/gallery/` |
-| Organizer and supporter logos | `_data/organizers.yml`, files in `assets/images/logos/` |
+| Hero and footer organizer and supporter logos | `_data/organizers.yml`, files in `assets/images/logos/` |
 | Colours and layout | `assets/main.scss` |
 
 ## Local preview
