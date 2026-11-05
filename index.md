@@ -61,9 +61,15 @@ Participants come from Germany and neighboring European countries.
 
 ## Format
 
-{% include format-list.html %}
+<ul class="format-list">
+  <li><strong>Keynote talks</strong>Talks from research and industry to frame the two days.</li>
+  <li><strong>Company pitches</strong>Companies present concrete challenges, with context, constraints and desired outcomes.</li>
+  <li><strong>Working sessions</strong>Small interdisciplinary groups analyze a challenge and map it to AI methods.</li>
+  <li><strong>Project presentations</strong>Groups present solution concepts and proposed next steps.</li>
+  <li><strong>Networking</strong>Time to set up collaborations, thesis projects, internships and pilots.</li>
+</ul>
 
-See the [program page]({{ "/program/" | relative_url }}) for start time and details.
+See the [program page]({{ "/program/" | relative_url }}) for the two-day schedule.
 
 ## Participating companies
 
