@@ -7,7 +7,7 @@
   {%- for p in include.people %}
   <div class="person">
     {%- if p.logo %}
-    <img class="person-logo" src="{{ "/assets/images/" | append: p.logo | relative_url }}" alt="{{ p.name }} logo">
+    <img class="person-logo" src="{{ "/assets/images/" | append: p.logo | relative_url }}" alt="{{ p.logo_alt }}">
     {%- else %}
     <img src="{{ "/assets/images/" | append: include.dir | append: "/" | append: p.photo | relative_url }}" alt="{{ p.name }}">
     {%- endif %}
