@@ -82,12 +82,6 @@ in the application form; final team assignment depends on balance across the gro
 
 {% include people-grid.html people=site.data.speakers dir="speakers" empty="To be announced." %}
 
-{% if site.data.committee.size > 0 %}
-## Organizing committee
-
-{% include people-grid.html people=site.data.committee dir="people" %}
-{% endif %}
-
 ## Apply
 
 In your application, please tell us about your academic or professional background,
@@ -121,5 +115,11 @@ separately.
 <iframe class="map-embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
   src="https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1sBurg+Frankenberg,+Bismarckstra%C3%9Fe+68,+52066+Aachen!6i15"
   title="Map of Burg Frankenberg, Aachen"></iframe>
+
+{% if site.data.committee.size > 0 %}
+## Organizing committee
+
+{% include people-grid.html people=site.data.committee dir="people" %}
+{% endif %}
 
 </div>

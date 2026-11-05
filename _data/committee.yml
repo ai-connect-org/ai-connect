@@ -1,7 +1,27 @@
 # Organizing committee. The section is hidden while this list is empty.
-# Put photos in assets/images/people/.
+# Put photos in assets/images/people/ (portrait crop, roughly 4:5), then add
+# "photo: jane_doe.jpg" to the entry. Without a photo the card shows initials.
+# role is optional.
 #
 # - name: Jane Doe
 #   role: General chair
 #   photo: jane_doe.jpg
-[]
+#   url: https://www.linkedin.com/in/jane-doe/
+
+- name: Tamara Weber
+  url: https://www.linkedin.com/in/tamara-weber-820b6583/
+
+- name: Marie Anastacio
+  url: https://www.linkedin.com/in/marie-anastacio-29b4562b/
+
+- name: Aditya Mohan
+  url: https://www.linkedin.com/in/amsks/
+
+- name: Sven Trendow
+  url: https://www.linkedin.com/in/sven-trendow-2987891a8/
+
+- name: Julia Mann
+  url: https://www.linkedin.com/in/julia-hoerner/
+
+- name: Laure Poirson
+  url: https://www.linkedin.com/in/laure-poirson/

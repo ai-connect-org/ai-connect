@@ -8,11 +8,15 @@
   <div class="person">
     {%- if p.logo %}
     <img class="person-logo" src="{{ "/assets/images/" | append: p.logo | relative_url }}" alt="{{ p.logo_alt }}">
-    {%- else %}
+    {%- elsif p.photo %}
     <img src="{{ "/assets/images/" | append: include.dir | append: "/" | append: p.photo | relative_url }}" alt="{{ p.name }}">
+    {%- else %}
+    {%- assign parts = p.name | split: " " %}
+    <div class="person-initials" aria-hidden="true">{{ parts.first | slice: 0 }}{{ parts.last | slice: 0 }}</div>
     {%- endif %}
     <div class="person-name">{% if p.url %}<a href="{{ p.url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</div>
-    <div class="person-meta">{{ p.affiliation | default: p.role }}</div>
+    {%- assign meta = p.affiliation | default: p.role %}
+    {%- if meta %}<div class="person-meta">{{ meta }}</div>{% endif %}
   </div>
   {%- endfor %}
 </div>

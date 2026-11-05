@@ -270,6 +270,20 @@ $accent: #7bb13c;               // CAIRNE green, used for the apply box edge
     object-fit: contain;
     object-position: center;
   }
+  // Placeholder until a person's photo arrives.
+  .person-initials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $grey-color-dark;
+    background: $grey-color-light;
+    border-radius: 50%;
+  }
   .person-name { font-weight: 700; }
   .person-meta { font-size: 0.8rem; color: $grey-color; }
 }
