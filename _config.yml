@@ -32,9 +32,9 @@ nav:
   - title: Program
     url: /program/
   - title: Apply
-    url: /#apply
+    url: /apply/
   - title: Venue
-    url: /#venue
+    url: /venue/
 
 exclude:
   - README.md
