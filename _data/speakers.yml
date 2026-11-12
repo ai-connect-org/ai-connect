@@ -10,12 +10,12 @@
 
 - name: Philipp Reißel
   affiliation: CEO, amber
-  logo: companies/amber.svg
-  logo_alt: amber logo
+  photo: philipp_reissel.jpg
   url: https://amber.de/en/
 
 - name: Tamara Weber
-  affiliation: AI Center, RWTH Aachen University
+  affiliation: JUPITER AI Factory
+  photo: tamara_weber.jpg
   url: https://www.linkedin.com/in/tamara-weber-820b6583/
 
 - name: Marie Anastacio
@@ -31,5 +31,5 @@
   url: https://www.linkedin.com/in/laure-poirson/
 
 - name: Julia Mann
-  affiliation: JUPITER AI Factory
+  affiliation: Managing Director, AI Center, RWTH Aachen University
   url: https://www.linkedin.com/in/julia-hoerner/
