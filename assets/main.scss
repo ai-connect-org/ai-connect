@@ -399,3 +399,9 @@ $accent: #7bb13c;               // CAIRNE green, used for the apply box edge
 @media screen and (max-width: 800px) {
   .footer-col-2 { width: calc(100% - (#{$spacing-unit} / 2)); }
 }
+
+// Program page: timed schedule tables share the same time-column width.
+table.schedule {
+  width: 100%;
+  th:first-child, td:first-child { width: 9rem; white-space: nowrap; }
+}
