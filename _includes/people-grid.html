@@ -17,7 +17,6 @@
     <div class="person-name">{% if p.url %}<a href="{{ p.url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</div>
     {%- assign meta = p.affiliation | default: p.role %}
     {%- if meta %}<div class="person-meta">{{ meta }}</div>{% endif %}
-    {%- if p.photo and p.photo_credit %}<div class="person-credit">Photo: {{ p.photo_credit }}</div>{% endif %}
   </div>
   {%- endfor %}
 </div>

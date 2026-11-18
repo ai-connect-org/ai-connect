@@ -6,13 +6,11 @@
 # - name: Jane Doe
 #   affiliation: Example University
 #   photo: jane_doe.jpg
-#   photo_credit: Jane Smith   (optional, shown under the card as "Photo: ...")
 #   url: https://example.org
 
 - name: Holger Hoos
   affiliation: Alexander von Humboldt Professor, RWTH Aachen University
   photo: holger_hoos.jpg
-  photo_credit: Heike Lachmann
   url: https://www.ki.nrw/ki-stimmen/holger-hoos/
 
 - name: Philipp Reißel
@@ -43,5 +41,4 @@
 - name: Julia Mann
   affiliation: Managing Director, AI Center, RWTH Aachen University
   photo: julia_mann.jpg
-  photo_credit: Heike Lachmann
   url: https://www.linkedin.com/in/julia-hoerner/
