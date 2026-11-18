@@ -1,6 +1,7 @@
 {%- comment -%}
-  Company cards: logo, sector and the challenge the company brings.
-  Params: logos (list with name, logo, url, sector, challenge), empty (text when the list is empty).
+  Company cards for the start page: logo, sector, short introduction and a link to the
+  company's challenge on the Companies & Challenges page.
+  Params: logos (list with id, name, logo, url, sector, intro), empty (text when the list is empty).
 {%- endcomment -%}
 {%- if include.logos.size > 0 -%}
 <div class="company-grid">
@@ -8,7 +9,8 @@
   <div class="company">
     <a class="company-logo" href="{{ c.url }}" title="{{ c.name }}"><img src="{{ "/assets/images/" | append: c.logo | relative_url }}" alt="{{ c.name }}"></a>
     {%- if c.sector %}<div class="company-sector">{{ c.sector }}</div>{% endif %}
-    {%- if c.challenge %}<p class="company-challenge">{{ c.challenge }}</p>{% endif %}
+    {%- if c.intro %}<p class="company-intro">{{ c.intro }}</p>{% endif %}
+    {%- if c.challenge_title %}<a class="company-more" href="{{ "/challenges/" | relative_url }}#{{ c.id }}">See the challenge &rarr;</a>{% endif %}
   </div>
   {%- endfor %}
 </div>

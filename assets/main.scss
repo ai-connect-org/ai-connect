@@ -228,10 +228,47 @@ $accent: #7bb13c;               // CAIRNE green, used for the apply box edge
     letter-spacing: 0.04em;
     color: $brand-color;
   }
-  .company-challenge {
-    margin: 0.25rem 0 0;
+  .company-intro {
+    margin: 0.25rem 0 0.5rem;
     font-size: 0.9rem;
   }
+  .company-more {
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+}
+
+// Companies & Challenges page: one block per company, anchored by id.
+.challenge {
+  margin: 1.5rem 0;
+  padding: 1.25rem 1.4rem;
+  background: #fff;
+  border: 1px solid $grey-color-light;
+  border-radius: 8px;
+  scroll-margin-top: 1rem;
+
+  .challenge-head {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  .challenge-logo img {
+    display: block;
+    width: 120px;
+    max-height: 48px;
+    object-fit: contain;
+  }
+  .company-sector {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: $brand-color;
+  }
+  .challenge-company { font-weight: 700; }
+  h3 { margin: 0 0 0.4rem; }
+  p { margin: 0; }
 }
 
 .photo-strip {

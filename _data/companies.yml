@@ -1,35 +1,67 @@
-# Participating companies, one per challenge (same order as the application form).
+# Participating companies, one per challenge.
 # logo is a path under assets/images/; company logos live in assets/images/companies/.
 # While this list is empty the section shows "To be announced".
+#
+# intro: short company introduction for the start page, written from public sources.
+# challenge_title / pitch: only Section 2 ("Challenge Overview (public)") of each company's
+#   challenge form. Sections 3 to 5 are for registered participants only; keep them off the site.
+# id: anchor on the Companies & Challenges page (/challenges/#id).
 
-- name: Carglass
-  sector: Automotive
+- id: carglass
+  name: Carglass
+  sector: Automotive services
   logo: companies/carglass.svg
   url: https://www.carglass.de
-  challenge: >-
-    AI-Based Optimization of Service Center Delivery Strategies
+  intro: >-
+    Carglass repairs and replaces vehicle glass, from windscreens to side and rear
+    windows, and supplies a network of Service Centers across Germany.
+  challenge_title: AI-Based Optimization of Service Center Delivery Strategies
+  pitch: >-
+    How can AI optimize delivery frequency, cut-off times and routing across Service
+    Centers to reduce logistics costs while maintaining reliable part availability?
 
-- name: Cognita Reply
-  sector: Consulting
+- id: cognita-reply
+  name: Cognita Reply
+  sector: IT &amp; consulting
   logo: companies/cognita-reply.svg
   url: https://www.reply.com/cognita-reply/en
-  challenge: >-
-    An AI agent that captures ideas consistently, screens their AI suitability and
+  intro: >-
+    Cognita Reply, part of the Reply group, helps organizations adopt OpenAI technologies,
+    from ChatGPT Enterprise rollouts to custom assistants, agents and AI governance.
+  challenge_title: "AI Compass: From Ideas to AI Value"
+  pitch: >-
+    Build an AI agent that captures ideas consistently, screens their AI suitability and
     EU AI Act risk, and prioritizes high-value opportunities transparently.
 
-- name: JAIF x WZL | RWTH
+- id: jaif-wzl
+  name: JAIF x WZL | RWTH
   sector: Manufacturing
   logo: logos/jaif.png
   url: https://www.wzl.rwth-aachen.de/cms/~sijq/wzl/?lidx=1
-  challenge: >-
-    Develop a concept for continuously adapting and deploying vision foundation models
-    for battery cell quality inspection, exploring how JUPITER can support model training
-    and validation while maintaining inspection reliability through validated updates and
+  intro: >-
+    A joint challenge from the JUPITER AI Factory, which opens Europe's first exascale
+    supercomputer to AI work in research and industry, and the Laboratory for Machine Tools
+    and Production Engineering (WZL) of RWTH Aachen University.
+  challenge_title: >-
+    Enabling continuous deployment of vision foundation models for battery cell quality
+    inspection using JUPITER
+  pitch: >-
+    Develop a concept for continuously adapting and deploying vision foundation models for
+    battery cell quality inspection, exploring how JUPITER can support model training and
+    validation while maintaining inspection reliability through validated updates and
     targeted human oversight.
 
-- name: Unchained Robotics
-  sector: Robotics
+- id: unchained-robotics
+  name: Unchained Robotics
+  sector: Robotics &amp; automation
   logo: companies/unchained-robotics.svg
   url: https://www.unchainedrobotics.de/en
-  challenge: >-
-    AI-driven mixed palletizing: intelligent planning for flexible robotic automation.
+  intro: >-
+    Unchained Robotics makes industrial automation accessible: companies use its platform
+    to find and compare robots, grippers and cameras, and its team builds ready-to-run
+    robotic solutions such as palletizing systems.
+  challenge_title: >-
+    AI-Driven Mixed Palletizing: Intelligent Planning for Flexible Robotic Automation
+  pitch: >-
+    How can AI help a robot turn a changing stream of different boxes into stable,
+    space-efficient mixed pallets under real-world handling constraints?

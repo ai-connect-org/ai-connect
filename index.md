@@ -70,7 +70,8 @@ See the [program page]({{ "/program/" | relative_url }}) for the two-day schedul
 
 ## Participating companies
 
-Each company brings one concrete challenge for the working groups.
+Each company brings one concrete challenge for the working groups. Read the challenge
+titles and summaries on the [Companies & Challenges page]({{ "/challenges/" | relative_url }}).
 
 {% include logo-grid.html logos=site.data.companies empty="To be announced." %}
 
